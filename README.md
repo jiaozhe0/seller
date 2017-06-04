@@ -40,7 +40,17 @@
 + 商品详情页面 food/food
  
 > 组件之间的通讯
+```
+props : 父组件向子组件 传送数据
 
+自定事件 ：子组件向父组件传递数据  使用 $on(eventName,fn) 监听事件(注意：回调函数名后面是不加（）和参数) ，使用 $emit(eventName，argument) 触发事件 
+
+.sync修饰符：2.23新加的语法糖 ，会被扩展为一个自动更新父组件属性的 v-on 侦听器
+
+语法：:for.sync='bar'
+      thia.$emit('update:for',newval)
+
+```
 
 
 > A Vue.js project
