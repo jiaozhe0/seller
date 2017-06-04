@@ -66,10 +66,24 @@ mixins:
 
 ```
 >css充电
-```css
-设备像素比：
+```javascript
+设备像素比：-webkit-min-device-pixel-ratio
+
 多行文字垂直居中：
-背景模糊：
+
+背景模糊：filter:blur(10px)
+苹果手机支持的模糊：backdrop-filter:blur(10px);
+
+```
+>better-scroll
+```
+一定要做dom树渲染完后，再初始化，
+1.可以$nextTick()
+2.使用生命周期钩子函数的updated(){}
+new BScroll(this.$refs.foodWrapper, {
+          probeType: 3,
+          click: true  
+        });
 
 ```
 
