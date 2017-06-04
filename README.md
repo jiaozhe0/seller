@@ -19,32 +19,27 @@
 把该放一起的放一起，除了模版 和 js业务逻辑，还可以把 这个组件自己用到的其他静态资源，
 ```
 > 项目组件
-+ 购物车
++ 购物车  shopcart/shopcart.vue
  
- 购买物品小球飞入动画
++ 购买物品小球飞入动画
  
- 评价star组件
++ 评价star组件 star/star.vue
  
- 商品添加、删除组件
++ 商品添加、删除组件 cartcontrol/cartcontrol
  
- 优惠图标组件
++ 优惠图标组件 icon/icon
  
- 目录、列表联动滚动
++ 评论的是否满意和内容筛选  ratingselect/ratingselect
  
- 画廊
++ 商品列表页面 goods/goods
  
- 评论的是否满意和内容筛选
++ 店铺评价页面 rating/rating
  
- 商品列表页面
++ 商家介绍页面 seller/seller
  
- 店铺评价页面
++ 商品详情页面 food/food
  
- 商家介绍页面
- 
- 优惠活动页面
- 
- 商品详情页面
-
+> 组件之间的通讯
 
 
 
