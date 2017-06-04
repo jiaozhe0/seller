@@ -1,5 +1,8 @@
 
 # sell
+
+技术栈 ：vue2 + less + node + axiso 
+
 ## 组件 ##
 
 > 组件是构成应用的基本单位，带有业务逻辑和数据的html
@@ -21,8 +24,6 @@
 > 项目组件
 + 购物车  shopcart/shopcart.vue
  
-+ 购买物品小球飞入动画
- 
 + 评价star组件 star/star.vue
  
 + 商品添加、删除组件 cartcontrol/cartcontrol
@@ -43,12 +44,25 @@
 ```
 props : 父组件向子组件 传送数据
 
-自定事件 ：子组件向父组件传递数据  使用 $on(eventName,fn) 监听事件(注意：回调函数名后面是不加（）和参数) ，使用 $emit(eventName，argument) 触发事件 
+自定事件 ：子组件向父组件传递数据  
+>使用 $on(eventName,fn) 监听事件(注意：回调函数名后面是不加（）和参数) 
+>使用 $emit(eventName，argument) 触发事件 
 
 .sync修饰符：2.23新加的语法糖 ，会被扩展为一个自动更新父组件属性的 v-on 侦听器
-
 语法：:for.sync='bar'
       thia.$emit('update:for',newval)
+    
+ref:用ref给子组件添加一个索引id，父组件直接接访问子组件，也可以使用ref给html标签加索引，获取dom元素
+    组件里调用：this.$refs.索引id，
+
+非父子间通讯：可以使用一个空的 Vue 实例作为中央事件总线，在 商品添加、删除组件 cartcontrol/cartcontrol 里有用到
+简单的用法介绍：https://segmentfault.com/a/1190000008018314 
+
+mixins:
+```
+>计算属性
+```
+该项目用到的频率比较高，他的使用场景是响应数据变动的频率比较高，依托他的计算缓存
 
 ```
 
