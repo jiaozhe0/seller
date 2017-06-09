@@ -86,7 +86,16 @@ new BScroll(this.$refs.foodWrapper, {
         });
 
 ```
+> js API
+```
+getBoundingClientRect()
 
+var box=document.getElementById('box');         // 获取元素
+alert(box.getBoundingClientRect().top);         // 元素上边距离页面上边的距离
+alert(box.getBoundingClientRect().right);       // 元素右边距离页面左边的距离
+alert(box.getBoundingClientRect().bottom);      // 元素下边距离页面上边的距离
+alert(box.getBoundingClientRect().left);        // 元素左边距离页面左边的距离
+```
 > A Vue.js project
 
 ## Build Setup
