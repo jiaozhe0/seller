@@ -76,6 +76,7 @@ mixins:
 
 ```
 >better-scroll
++ url:https://github.com/ustbhuangyi/better-scroll
 ```
 一定要做dom树渲染完后，再初始化，
 1.可以$nextTick()
@@ -98,6 +99,8 @@ alert(box.getBoundingClientRect().left);        // 元素左边距离页面左�
 ```
 > 学习资源
 + 设备像素比：http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/
++ flex布局：http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html?utm_source=tuicool
++ CSS Sticky footer ：CSS秘密花园:Sticky footers
 
 > A Vue.js project
 
