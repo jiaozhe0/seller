@@ -96,6 +96,9 @@ alert(box.getBoundingClientRect().right);       // 元素右边距离页面左�
 alert(box.getBoundingClientRect().bottom);      // 元素下边距离页面上边的距离
 alert(box.getBoundingClientRect().left);        // 元素左边距离页面左边的距离
 ```
+> 学习资源
++ 设备像素比：http://www.zhangxinxu.com/wordpress/2012/08/window-devicepixelratio/
+
 > A Vue.js project
 
 ## Build Setup
